@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping Mall - 신발</title>
+        <style>
+            h1 {
+                text-align: center;
+                color: black;
+            }
+            a {
+                text-decoration: none;
+            }
+            table {
+                align-items: center;
+            }
+            #menu {
+                background-color: white;
+                width: 100%;
+                height: 50px;
+            }
+            #item {
+                color:black;
+            }
+            #back {
+                border-radius: 5px 5px 5px 5px;
+                width: 200px;
+                height: 25px;
+                background-color:rgb(210, 204, 204);
+                border-color: black;
+            }
+            img {
+                cursor: pointer;
+            }
+            button {
+                width: 200px;
+                height: 50px;
+                border: 0px;
+                font-size: 20px;
+                font-weight: 400;
+                background-color: white;
+                color: black;
+                display: inline;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: rgb(228, 207, 243);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="Home.html"><h1>Shopping Mall</h1></a>
+        </header>
+        <nav>
+            <div style="text-align: center;" id="menu">
+                <!--상품 종류 버튼-->
+                <a href="Category1.html"><button type="button" style="margin-right: 20px;">남성 의류</button></a>
+                <a href="Category2.html"><button type="button" style="margin-right: 20px;">여성 의류</button></a>
+                <a href="Category3.html"><button type="button" style="margin-right: 20px; background-color: rgb(210, 242, 245);">신발</button></a>
+                <a href="Category4.html"><button type="button" style="margin-right: 20px;">패션 소품</button></a>
+            </div>
+            <hr style="border: 1px solid black;">
+            <div>
+                <p>
+                    <!--뒤로가기-->
+                    <span style="font-size: 15px; font-weight: 700;">
+                        <a href="Home.html">&nbsp;&nbsp;홈</a> &gt; 신발
+                    </span>
+                </p>
+            </div>
+        </nav>
+        <main>
+            <!--상품 목록-->
+            <table width="1300" height="700" style="margin-left: auto; margin-right: auto; margin-top: 30px;">
+                <caption style="font-size: 25px; font-weight: 800;">신발<hr></caption>
+                <tr>
+                    <td><a href="Item3-1.html" id="item"><label><img src="ItemPicture/item3-1.png" width="200" height="200" alt="Vans 블랙 화이트 스니커즈"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">Vans 블랙 화이트 스니커즈</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;72000</span></label></a>
+                    </td>
+                    <td><a href="Item3-2.html" id="item"><label><img src="ItemPicture/item3-2.png" width="200" height="200" alt="컨버스 척70 블랙"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">컨버스 척70 블랙</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;100000</span></label></a>
+                    </td>                    
+                    <td><a href="Item3-3.html" id="item"><label><img src="ItemPicture/item3-3.png" width="200" height="200" alt="아디다스 슈퍼스타 화이트"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">아디다스 슈퍼스타 화이트</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;120000</span></label></a>
+                    </td>                    
+                    <td><a href="Item3-4.html" id="item"><label><img src="ItemPicture/item3-4.png" width="200" height="200" alt="FILA 엘리트 코트"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">FILA 엘리트 코트</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;79000</span></label></a>
+                    </td>                    
+                    <td><a href="Item3-5.html" id="item"><label><img src="ItemPicture/item3-5.png" width="200" height="200" alt="나이키 런 스위프트"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">나이키 런 스위프트</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;80000</span></label></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="Item3-6.html" id="item"><label><img src="ItemPicture/item3-6.png" width="200" height="200" alt="나이키 화이트 스니커즈"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">나이키 화이트 스니커즈</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;71000</span></label></a>
+                    </td>                    
+                    <td><a href="Item3-7.html" id="item"><label><img src="ItemPicture/item3-7.png" width="200" height="200" alt="Black 남성 구두"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">Black 남성 구두</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;120000</span></label></a>
+                    </td>                    
+                    <td><a href="Item3-8.html" id="item"><label><img src="ItemPicture/item3-8.png" width="200" height="200" alt="여성 구두 white"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">여성 구두 white</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;63000</span></label></a>
+                    </td>                    
+                    <td><a href="Item3-9.html" id="item"><label><img src="ItemPicture/item3-9.png" width="200" height="200" alt="Vans 마쉬멜로우"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">Vans 마쉬멜로우</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;79000</span></label></a>
+                    </td>                    
+                    <td><a href="Item3-10.html" id="item"><label><img src="ItemPicture/item3-10.png" width="200" height="200" alt="컨버스 올스타 뮬"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">컨버스 올스타 뮬</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;70000</span></label></a>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <br>
+            <hr>
+            2023 Shopping Mall Project
+        </footer>
+    </body>
+</html>

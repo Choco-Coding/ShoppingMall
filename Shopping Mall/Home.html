@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping Mall</title>
+        <style>
+            h1 {
+                text-align: center;
+                color: black;
+            }
+            #menu {
+                width: 100%;
+                height: 120px;
+            }
+            a {
+                text-decoration: none;
+            }
+            button {
+                width: 200px;
+                height: 50px;
+                border: 0px;
+                font-size: 20px;
+                font-weight: 600;
+                background-color: rgb(180, 180, 180);
+                color: black;
+                display: inline;
+                cursor: pointer;
+            }
+            .back:hover {
+                background-color: rgb(185, 216, 236);
+            }
+            img {
+                cursor: pointer;
+            }
+            #item {
+                color:black;
+            }
+            #menu button {
+                border-radius: 10px 10px 10px 10px;
+            }
+            #menu button:hover {
+                border: 3px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="Home.html"><h1>Shopping Mall</h1></a>
+            <hr style="border: 1px solid black; margin-bottom: 40px;">
+        </header>
+        <nav>
+            <div style="text-align: center;" id="menu">
+                <!--상품 종류 버튼-->
+                <a href="Category1.html"><button type="button" style="margin-right: 40px; width: 150px; height: 150px; ">
+                    <img src="type1.png" width="60px" height="60px" alt="type1"><br>남성 의류</button></a>
+                <a href="Category2.html"><button type="button" style="margin-right: 40px; width: 150px; height: 150px; ">
+                    <img src="type2.png" width="60px" height="60px" alt="type2"><br>여성 의류</button></a>
+                <a href="Category3.html"><button type="button" style="margin-right: 40px; width: 150px; height: 150px; ">
+                    <img src="type3.png" width="60px" height="60px" alt="type3"><br>신발</button></a>
+                <a href="Category4.html"><button type="button" style="width: 150px; height: 150px; ">
+                    <img src="type4.png" width="60px" height="60px" alt="type4"><br>패션 소품</button></a>
+            </div>
+        </nav>
+        <main>
+            <table  width="1300" height="300" style="margin-left: auto; margin-right: auto; margin-top: 100px; margin-bottom: 100px; align-items: center;">
+                <!--판매량 순위-->
+                <caption style="font-size: 30px; font-weight: 700; text-align: left; margin-bottom: 20px;">
+                    Ranking.
+                    <hr>
+                </caption>
+                <tr>
+                    <td style="text-align: left; font-size: 20px; font-weight: 700; color: gray;">1위</td>
+                    <td style="text-align: left; font-size: 20px; font-weight: 700; color: gray;">2위</td>
+                    <td style="text-align: left; font-size: 20px; font-weight: 700; color: gray;">3위</td>
+                    <td style="text-align: left; font-size: 20px; font-weight: 700; color: gray;">4위</td>
+                    <td style="text-align: left; font-size: 20px; font-weight: 700; color: gray;">5위</td>
+                </tr>
+                <tr>
+                    <!--판매량 1등-->
+                    <td><a href="Item3-3.html" id="item"><label><img src="ItemPicture/item3-3.png" width="200" height="200" alt="아디다스 슈퍼스타 화이트"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">아디다스 슈퍼스타 화이트</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;120000</span></label></a>
+                    </td>
+                    <!--판매량 2등-->
+                    <td><a href="Item2-10.html" id="item"><label><img src="ItemPicture/item2-10.png" width="200" height="200" alt="데일리 브이넥 가디건"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">데일리 브이넥 가디건</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;54000</span></label></a>
+                    </td>
+                    <!--판매량 3등-->                    
+                    <td><a href="Item1-7.html" id="item"><label><img src="ItemPicture/item1-7.png" width="200" height="200" alt="세미 와이드 밴딩 슬랙스"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">세미 와이드 밴딩 슬랙스</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;34900</span></label></a>
+                    </td>  
+                    <!--판매량 4등-->                  
+                    <td><a href="Item1-1.html" id="item"><label><img src="ItemPicture/item1-1.png" width="200" height="200" alt="옥스퍼드 셔츠"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">옥스퍼드 셔츠</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;199000</span></label></a>
+                    </td>   
+                    <!--판매량 5등-->                 
+                    <td><a href="Item4-7.html" id="item"><label><img src="ItemPicture/item4-7.png" width="200" height="200" alt="남여공용 머플러"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">남여공용 머플러</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;24000</span></label></a>
+                    </td>
+                </tr>
+            </table>
+
+            <table  width="1300" height="300" style="margin-left: auto; margin-right: auto; margin-top: 100px; margin-bottom: 100px; align-items: center;">
+                <!--신상품-->
+                <caption style="font-size: 30px; font-weight: 700; text-align: left; margin-bottom: 20px;">
+                    New Arrival.
+                    <hr>
+                </caption>
+                <tr>
+                    <td><a href="Item3-5.html" id="item"><label><img src="ItemPicture/item3-5.png" width="400" height="400" alt="나이키 런 스위프트"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">나이키 런 스위프트</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;80000</span></label></a>
+                    </td>
+                    
+                    <td><a href="Item1-8.html" id="item"><label><img src="ItemPicture/item1-8.png" width="400" height="400" alt="오픈 카라 티셔츠"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">오픈 카라 티셔츠</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;42000</span></label></a>
+                    </td>
+                                      
+                    <td><a href="Item2-9.html" id="item"><label><img src="ItemPicture/item2-9.png" width="400" height="400" alt="기본 오버핏 정장 자켓"><br>
+                        <span style="font-size: 15px; font-weight: 700; cursor: pointer;">기본 오버핏 정장 자켓</span><br>
+                        <span style="font-size: 13px; font-weight: 500; color: brown; cursor: pointer;">&#8361;62900</span></label></a>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <br>
+            <hr>
+            2023 Shopping Mall Project
+        </footer>
+    </body>
+</html>

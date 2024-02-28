@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>gray 스웨트 팬츠</title>
+        <script language = "javascript">
+            function selectOption() {
+                var size = document.getElementById("size");
+                var sizeIndex = size.options.selectedIndex;              
+                alert("gray 스웨트 팬츠\n구매가 완료되었습니다.\nSize: " + size.options[sizeIndex].value);
+            }
+        </script>
+        <style>
+            h1 {
+                text-align: center;
+                color: black;
+            }
+            a {
+                text-decoration: none;
+            }
+            #menu {
+                background-color: white;
+                width: 100%;
+                height: 50px;
+            }
+            #item {
+                color:black;
+            }
+            #back {
+                border-radius: 5px 5px 5px 5px;
+                width: 200px;
+                height: 25px;
+                background-color:rgb(210, 204, 204);
+                border-color: black;
+            }
+            img {
+                cursor: pointer;
+            }
+            button {
+                width: 200px;
+                height: 50px;
+                border: 0px;
+                font-size: 20px;
+                font-weight: 400;
+                background-color: white;
+                color: black;
+                display: inline;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: rgb(228, 207, 243);
+            }
+            select {
+                width: 300px;
+                height: 50px;
+                background-color: ghostwhite;
+                border: 1;
+                font-size: 20px;
+            }
+            #buy {
+                border-radius: 5px 5px 5px 5px;
+                width: 300px;
+                height: 50px;
+                background-color: skyblue;
+                color: white;
+                font-size: 30px;
+                font-weight: 700;
+                margin-right: 20px;
+            }
+            #like {
+                border-radius: 5px 5px 5px 5px;
+                width: 70px;
+                height: 50px;
+                background-color:pink;
+            }
+            #buy:hover, #like:hover {
+                border: 3px solid gray;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="Home.html"><h1>Shopping Mall</h1></a>
+        </header>
+        <nav>
+            <div style="text-align: center;" id="menu">
+                <!--상품 종류 버튼-->
+                <a href="Category1.html"><button type="button" style="margin-right: 20px; background-color: rgb(210, 242, 245);">남성 의류</button></a>
+                <a href="Category2.html"><button type="button" style="margin-right: 20px;">여성 의류</button></a>
+                <a href="Category3.html"><button type="button" style="margin-right: 20px;">신발</button></a>
+                <a href="Category4.html"><button type="button" style="margin-right: 20px;">패션 소품</button></a>
+            </div>
+            <hr style="border: 1px solid black;">
+            <div>
+                <p>
+                    <!--뒤로가기-->
+                    <span style="font-size: 15px; font-weight: 700;">
+                        <a href="Home.html">&nbsp;&nbsp;홈</a> &gt; <a href="Category1.html">남성 의류</a> &gt; gray 스웨트 팬츠
+                    </span>
+                </p>
+            </div>
+        </nav>
+        <main>
+            <table style="margin-left: auto; margin-right: auto; margin-top: 50px;">
+                <tr>
+                    <td width="600px" height="600px" valign="top"><img src="ItemPicture/item1-10.png" width="500" height="500" alt="gray 스웨트 팬츠"></td>
+                    <td width="600px" height="600px" valign="top">
+                        <p style="font-size:50px; font-weight: 700; margin-top: 0;">gray 스웨트 팬츠</p>
+                        <p style="font-size: 30px; font-weight: 700; color: brown;">&#8361;34000</p>
+                        <p>
+                            <span style="text-decoration: underline; font-weight: 700;">상품 설명</span><br>
+                            앞 부분에 깊게 들어간 Tuck 주름으로 인해 임체감을 줄 수 있습니다.<br>
+                            허리 부분은 스트링으로 마무리하여 자유로운 사이즈 조절이 가능합니다.
+                        </p>
+                        <hr>
+                        <p style="font-size: 15px; font-weight: 500;">
+                            <strong>배송비: </strong>무료<br>
+                            <strong>후기: </strong>4.7 / 5
+                        </p>
+                        <hr>
+                        <p>
+                        <form>
+                            <span style="font-size: 20px; font-weight: 700;">size 선택:</span>
+                            <select name="size" id="size">
+                                <option value="S" selected>S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                            <br>
+                            <br>
+                            <button type="submit" id="buy" onclick="selectOption();">구매하기</button>
+                            <button type="submit" id="like" onclick="alert('관심 상품으로 등록되었습니다.');"><img src="Heart.png" width="30" height="30"></button>
+                        </form>
+                        </p>
+                    </td>
+                </tr>
+
+            </table>
+        </main>
+        <footer>
+            <br>
+            <hr>
+            2023 Shopping Mall Project
+        </footer>
+    </body>
+</html>
