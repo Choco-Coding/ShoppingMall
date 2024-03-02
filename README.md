@@ -1,4 +1,4 @@
-# ShoppingMall
+# Shopping Mall
 HTML5, CSS3, javascript를 처음 학습한 후 제작한 간단한 쇼핑몰입니다.
 ***
 ## Result Images
